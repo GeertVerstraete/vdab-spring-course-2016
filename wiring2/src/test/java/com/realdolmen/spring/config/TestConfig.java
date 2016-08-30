@@ -12,9 +12,12 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
  * Created by cda5732 on 14/04/2015.
  */
 @Configuration
+@Profile("test")
+@PropertySource("classpath:/ZooImplTest.properties")
+
 // TODO load test properties
 // TODO configure a profile
-// TODO use component scanning
+@ComponentScan("com.realdolmen.spring")
 public class TestConfig {
     @Bean
     public Zoo zoo() {

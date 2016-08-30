@@ -7,6 +7,12 @@ import com.realdolmen.spring.domain.Visitor;
  * Created by cda5732 on 25/03/2015.
  */
 public interface Zoo {
+    int getMaxAnimalCount();
+
+    String getOwnerName();
+
+    int getTicketPrice();
+
     void addAnimal(Animal animal);
 
     void releaseAnimal(Animal animal);
@@ -19,4 +25,6 @@ public interface Zoo {
     int countAnimals();
 
     void feedAnimals();
+
+
 }
