@@ -5,7 +5,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class RescueDamselQuest implements Quest {
     @Override
-    public void embark() {
+    public String embark(String s) {
         System.out.println("Going to rescue damsel!");
+        return "damsel saved";
     }
 }

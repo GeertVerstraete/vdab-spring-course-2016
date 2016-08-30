@@ -12,6 +12,7 @@ public class Main {
 
         Knight k = ac.getBean(Knight.class);
         k.embarkOnQuest();
+       // System.out.println(k);
 
 
     }
