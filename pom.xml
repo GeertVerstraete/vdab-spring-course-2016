@@ -9,22 +9,24 @@
     <groupId>com.realdolmen.spring</groupId>
     <artifactId>spring-4-course</artifactId>
     <version>1.0</version>
-    <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.0.RELEASE</version>
 
-    <modules>
-        <module>introduction</module>
-        <module>wiring</module>
-        <module>wiring2</module>
-        <module>aspects</module>
-        <module>data-access-jdbc</module>
-        <module>data-access-jpa</module>
-        <module>data</module>
-        <module>transactions</module>
-        <module>test</module>
-        <module>boot-java</module>
-        <module>boot-groovy</module>
-        <module>samples</module>
-        <module>mvc</module>
-    </modules>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
