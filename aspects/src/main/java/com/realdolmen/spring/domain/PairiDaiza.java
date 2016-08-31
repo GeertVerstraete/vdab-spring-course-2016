@@ -1,5 +1,7 @@
 package com.realdolmen.spring.domain;
 
+import org.aspectj.lang.annotation.After;
+
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
@@ -63,4 +65,5 @@ public class PairiDaiza implements Zoo {
     public int countAnimals() {
         return animals.size();
     }
+
 }

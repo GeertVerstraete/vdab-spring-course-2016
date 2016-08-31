@@ -4,6 +4,7 @@ import com.realdolmen.spring.ApplicationConfiguration;
 import com.realdolmen.spring.domain.*;
 import com.realdolmen.spring.domain.Animal;
 import com.realdolmen.spring.domain.Elephant;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,7 @@ public class ZooTest {
     }
 
     @Test
+    @Ignore
     public void zooAddsRestaurantFeaturesNextToCoreBusiness() throws Exception {
         Object zoo = context.getBean("zoo");
         assertTrue("Zoo must be an instance of Zoo", zoo instanceof Zoo);
