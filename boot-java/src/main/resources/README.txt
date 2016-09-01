@@ -1,1 +1,0 @@
-TODO: The resource files here are not in the right location. Fix it.
