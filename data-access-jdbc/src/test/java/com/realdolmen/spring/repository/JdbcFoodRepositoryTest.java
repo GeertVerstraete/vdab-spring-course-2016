@@ -1,5 +1,6 @@
 package com.realdolmen.spring.repository;
 
+import com.realdolmen.spring.TestConfig;
 import com.realdolmen.spring.ZooConfig;
 import com.realdolmen.spring.domain.Animal;
 import com.realdolmen.spring.domain.Food;

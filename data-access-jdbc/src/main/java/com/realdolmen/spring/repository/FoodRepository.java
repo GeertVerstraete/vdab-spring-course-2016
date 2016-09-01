@@ -4,6 +4,10 @@ import com.realdolmen.spring.domain.Animal;
 import com.realdolmen.spring.domain.Food;
 import com.realdolmen.spring.domain.MeatyFood;
 import com.realdolmen.spring.domain.VegiFood;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
